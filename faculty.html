@@ -26,7 +26,15 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" integrity="sha512-r22gChDnGvBylk90+2e/ycr3RVrDi8DIOkIGNhJlKfuyQM4tIRAI062MaV8sfjQKYVGjOBaZBOA87z+IhZE9DA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <style>
+    table td{
+      padding:10px 10px;
+    }
+    table tr{
+      border-bottom:1px solid white;
+    }
+   </style>
 </head>
 
 <body>
@@ -126,7 +134,7 @@
       <h2>Faculty</h2>
       </div>
 <div class="container" >
-    <table class="table" >
+    <!-- <table class="table" >
         <thead>
             <tr>
                 <th>S.NO</th>
@@ -140,9 +148,9 @@
           
            
         </tbody>
-    </table>
+    </table> -->
     
-
+    <div class="table" id="table"></div>
 </div>
 
 
@@ -341,7 +349,8 @@
   </script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script>
+
+  <!-- <script>
        var row=document.getElementById('row');
       
     fetch('facultylist.json').then(res=>res.json()).then(txt=>{
@@ -378,8 +387,29 @@
 
 
      } );
+   </script> -->
+  
+   <script>
+      
+       let table = document.getElementById("table");
+       (
+           async() => {
+               let workbook = XLSX.read(await (await fetch("https://api.codetabs.com/v1/proxy?quest=https://github.com/anandkarthik39/csedept/blob/master/FacultyList.xls?raw=true")).arrayBuffer());
+               
+               let worksheet = workbook.SheetNames;
+               console.log(worksheet);
+                worksheet=[worksheet[0]];
+               worksheet.forEach(name => {
+                   let html = XLSX.utils.sheet_to_html(workbook.Sheets[name]);
+                   table.innerHTML += `
+                   ${html}
+                   `;
+                 
+               })
+               
+           }
+       )()
    </script>
-  </script>
 
 </body>
 </html>
