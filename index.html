@@ -26,6 +26,8 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" integrity="sha512-r22gChDnGvBylk90+2e/ycr3RVrDi8DIOkIGNhJlKfuyQM4tIRAI062MaV8sfjQKYVGjOBaZBOA87z+IhZE9DA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
 
 </head>
 
@@ -713,34 +715,34 @@ M5: To inculcate work ethics and commitment in students for their future endeavo
   var l_a =0 ;
   
 
-  fetch('facultylist.json').then(res=>res.json()).then(txt=>{
+  // fetch('facultylist.json').then(res=>res.json()).then(txt=>{
    
 
 
 
-      var res=txt.Sheet1;
+  //     var res=txt.Sheet1;
 
-      res.forEach(e => {
-        var z = (e.Designation).toLowerCase();
+  //     res.forEach(e => {
+  //       var z = (e.Designation).toLowerCase();
         
-        if(z==="professor" ){
-              p+=1;
-              console.log(p,z==="professor");
-        }
+  //       if(z==="professor" ){
+  //             p+=1;
+  //             console.log(p,z==="professor");
+  //       }
               
-        if(z==="associate professor" )
-              a_p+=1;
+  //       if(z==="associate professor" )
+  //             a_p+=1;
 
-        if(z==="senior assistant professor" || z==="sr.asst professor" || z==="sr.asst prof")
-              s_p+=1;
+  //       if(z==="senior assistant professor" || z==="sr.asst professor" || z==="sr.asst prof")
+  //             s_p+=1;
               
 
-        if(z==="assistant professor" || z==="asst.professor") 
-              as_p+=1;
-        if(z==="lab programmer") 
-              l_p+=1;
-        if(z==="lab administrator") 
-              l_a+=1;
+  //       if(z==="assistant professor" || z==="asst.professor") 
+  //             as_p+=1;
+  //       if(z==="lab programmer") 
+  //             l_p+=1;
+  //       if(z==="lab administrator") 
+  //             l_a+=1;
               
           
 
@@ -748,7 +750,48 @@ M5: To inculcate work ethics and commitment in students for their future endeavo
 
         
           
-      });
+  //     });
+
+  //     Professors.innerHTML=p;
+  //     Associate_professors.innerHTML=a_p;
+  //     Sr_Assistant_Professors.innerHTML=s_p;
+  //     Assistant_Professors.innerHTML=as_p;
+  //     Lab_Programmers.innerHTML=l_p;
+  //     Lab_Administrators.innerHTML=l_a;
+
+
+  //  } );
+
+   
+
+  let table = document.getElementById("table");
+       (
+           async() => {
+               let workbook = XLSX.read(await (await fetch("https://api.codetabs.com/v1/proxy?quest=https://github.com/anandkarthik39/csedept/blob/master/FacultyList.xls?raw=true")).arrayBuffer());
+               
+               let worksheet = workbook.SheetNames;
+               console.log(worksheet);
+                worksheet=[worksheet[0]];
+               worksheet.forEach(name => {
+                   let html = XLSX.utils.sheet_to_html(workbook.Sheets[name]);
+                  
+                   p = (html.match(/Professor/gi) || []).length;
+                   a_p = (html.match(/Assoc.Professor/gi) || []).length;
+                   s_p = (html.match(/Sr.Asst.Professor/gi) || []).length;
+                   as_p = (html.match(/Asst.Professor/gi) || []).length;
+                   l_p = (html.match(/lab.Programmer/gi) || []).length;
+                   l_a = (html.match(/lab.administrator/gi) || []).length;
+
+                  p=p/2;
+                  a_p=a_p/2;
+                  s_p=s_p/2;
+                  as_p=as_p/2;
+                  l_p=l_p/2;
+                  l_a=l_a/2;
+
+                 as_p=as_p-s_p;
+                 p=p-a_p-s_p-as_p;
+                
 
       Professors.innerHTML=p;
       Associate_professors.innerHTML=a_p;
@@ -757,13 +800,12 @@ M5: To inculcate work ethics and commitment in students for their future endeavo
       Lab_Programmers.innerHTML=l_p;
       Lab_Administrators.innerHTML=l_a;
 
-
-   } );
-
-   
-
-
-
+               })
+               
+           }
+       )();
+           
+      
  </script>
 
 
