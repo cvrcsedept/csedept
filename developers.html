@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>CSE DEPARTMENT</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.jpg" rel="icon">
+  <link href="assets/img/logo.jpg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+<style>
+  
+body{
+      min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f2f2f2;
+}
+h1{
+  color: #1683f0 ;
+  font-size:clamp(1rem, 10vw, 2rem);
+  
+}
+.card-pink{
+border-radius: 6px; 
+  border-bottom:4px solid #1c68b3!important;
+}
+.card-blue{
+border-radius: 6px; 
+  border-bottom:4px solid #1c68b3 !important;
+}
+
+.col .card img{
+aspect-ratio: 1 / 1.1;
+  object-fit:cover;
+  
+}
+.card-body{
+  padding:1rem 1.5rem;
+}
+.card-body p{
+  color:#4B5563;
+}
+.card-blue svg{
+  fill:#1c68b3 ;
+}
+.card-pink svg{
+  fill:#1c68b3;
+}
+.card-blue .card-footer p{
+  color:#1c68b3 ;
+}
+.card-pink .card-footer p{
+  color: #1c68b3;
+}
+.card-shape{
+  position:relative;
+}
+.custom-shape-divider-bottom-1634717805 {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1634717805 svg {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+
+.custom-shape-divider-bottom-1634717805 .shape-fill {
+    fill: #FFFFFF;
+}
+
+</style>
+</head>
+
+<body>
+
+  <div class="preloader">
+    <div class="loader">Loading...</div>
+   </div>
+ 
+  <!-- ======= Header ======= -->
+  
+
+  <header  class="d-flex align-items-center" id="header">
+   
+  
+    <div class="container d-flex align-items-center">
+     
+      <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+
+      <!-- <h1 class="logo me-auto"><a href="index.html">CVR COLLEGE OF ENGINEERING </a></h1> -->
+      
+     
+      <nav id="navbar" class="navbar">
+        <ul>
+           <li class="dropdown"><a href="#"><span>Home</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              
+              <li class="dropdown"><a href="#"><span>Academics</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="academic_calendar.html">Academic Calendar</a></li>
+                  <li><a href="syllabus_book.html">Syllabus Books</a></li>
+                  <li><a href="time_table.html">Time Table</a></li>
+                  </ul>
+              </li>
+              <li><a href="#" href="#" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Vision, Mission</a></li>
+              <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal1">Objectives</a></li>
+                     </ul>
+          </li>
+
+
+
+          <li class="dropdown"><a href="#"><span>Infrastructure</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="labs.html">Labs</a></li>
+              <li><a href="library.html">Library</a></li>
+              <li><a href="class_room.html">Class Rooms</a></li>
+              <li><a href="seminar_hall.html">Seminar Hall</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown "><a href="#team" class="nav-link scrollto"><span>Faculty</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="faculty.html">2021 - 2022</a></li>
+                    </ul>
+          </li>
+
+
+          <li class="dropdown"><a href="#"><span>Student Corner</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="e-resource.html">E-Resource</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="student_work.html">Student Work</a></li>
+               </ul>
+          </li>
+
+          <li class="dropdown"><a href="#"><span>Research</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="workshops.html">Conferences and Workshops</a></li>
+              <li><a href="projects.html">Research Projects and Consultancy</a></li>
+              
+            </ul>
+          </li>
+
+
+          <li class="dropdown"><a href="#"><span>About Us</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="developers.html">Developers</a></li>
+              
+            </ul>
+          </li>
+          
+
+                     </ul>
+
+        <i class="bi bi-list mobile-nav-toggle m-2"></i>
+        
+      </nav><!-- .navbar -->
+
+    </div>
+   
+  </header><!-- End Header -->
+
+  <main id="main">
+
+
+
+
+    <div class="container py-5">
+      <div class="row text-center">
+        <div class="col-lg-12">
+          <div class="section-title mt-3">
+            <h2>Developers</h2>
+          </div>
+      
+        </div>
+
+            </div>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" >
+              <div class="card card-pink h-80 overflow-hidden shadow bg-white border-0 px-0">
+                 <div class="card-shape">
+  <img src="assets/img/developers/afroz.jpg" class="card-img-top" alt="Jane">
+                      <div class="custom-shape-divider-bottom-1634717805">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+          <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+      </svg>
+  </div>
+                </div>
+                <div class="card-body">
+                  <blockquote>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 475.082 475.081" x="0px" y="0px" width="25px" height="25px" xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:space="preserve" version="1.1">
+                          <g>
+                          <g>
+                          <path d="M 164.45 219.27 h -63.954 c -7.614 0 -14.087 -2.664 -19.417 -7.994 c -5.327 -5.33 -7.994 -11.801 -7.994 -19.417 v -9.132 c 0 -20.177 7.139 -37.401 21.416 -51.678 c 14.276 -14.272 31.503 -21.411 51.678 -21.411 h 18.271 c 4.948 0 9.229 -1.809 12.847 -5.424 c 3.616 -3.617 5.424 -7.898 5.424 -12.847 V 54.819 c 0 -4.948 -1.809 -9.233 -5.424 -12.85 c -3.617 -3.612 -7.898 -5.424 -12.847 -5.424 h -18.271 c -19.797 0 -38.684 3.858 -56.673 11.563 c -17.987 7.71 -33.545 18.132 -46.68 31.267 c -13.134 13.129 -23.553 28.688 -31.262 46.677 C 3.855 144.039 0 162.931 0 182.726 v 200.991 c 0 15.235 5.327 28.171 15.986 38.834 c 10.66 10.657 23.606 15.985 38.832 15.985 h 109.639 c 15.225 0 28.167 -5.328 38.828 -15.985 c 10.657 -10.663 15.987 -23.599 15.987 -38.834 V 274.088 c 0 -15.232 -5.33 -28.168 -15.994 -38.832 C 192.622 224.6 179.675 219.27 164.45 219.27 Z" />
+                          <path d="M 459.103 235.256 c -10.656 -10.656 -23.599 -15.986 -38.828 -15.986 h -63.953 c -7.61 0 -14.089 -2.664 -19.41 -7.994 c -5.332 -5.33 -7.994 -11.801 -7.994 -19.417 v -9.132 c 0 -20.177 7.139 -37.401 21.409 -51.678 c 14.271 -14.272 31.497 -21.411 51.682 -21.411 h 18.267 c 4.949 0 9.233 -1.809 12.848 -5.424 c 3.613 -3.617 5.428 -7.898 5.428 -12.847 V 54.819 c 0 -4.948 -1.814 -9.233 -5.428 -12.85 c -3.614 -3.612 -7.898 -5.424 -12.848 -5.424 h -18.267 c -19.808 0 -38.691 3.858 -56.685 11.563 c -17.984 7.71 -33.537 18.132 -46.672 31.267 c -13.135 13.129 -23.559 28.688 -31.265 46.677 c -7.707 17.987 -11.567 36.879 -11.567 56.674 v 200.991 c 0 15.235 5.332 28.171 15.988 38.834 c 10.657 10.657 23.6 15.985 38.828 15.985 h 109.633 c 15.229 0 28.171 -5.328 38.827 -15.985 c 10.664 -10.663 15.985 -23.599 15.985 -38.834 V 274.088 C 475.082 258.855 469.76 245.92 459.103 235.256 Z" />
+                          </g>
+                          </g>
+                          
+                          </svg>
+                     
+                    </blockquote>
+                  
+                </div>
+                <div class="card-footer">
+                  <p class="mb-0 font-weight-bolder" style="color:#1c68b3">Mr.Suhail Afroz</p>
+                  <small class="text-muted">Specialisation - Computer Science & Engineering</small>
+                  
+  <div class="social-links d-flex justify-content-between align-items-center p-2" >
+    <a href="#" class="twitter" style="color: #1c68b3;"><i class="bx bxl-twitter"></i></a>
+    <a href="#" class="facebook" style="color: #1c68b3;"><i class="bx bxl-facebook"></i></a>
+    <a href="#" class="instagram"style="color: #1c68b3;"><i class="bx bxl-instagram"></i></a>
+     <a href="#" class="linkedin"style="color: #1c68b3;"><i class="bx bxl-linkedin"></i></a>
+   
+  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-blue h-80 overflow-hidden shadow bg-white border-0 px-0">
+                <div class="card-shape">
+                     <img src="assets/img/developers/anand.jpeg" class="card-img-top" alt="anandkarthik">
+                      <div class="custom-shape-divider-bottom-1634717805">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+          <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+      </svg>
+  </div>
+                </div>
+                <div class="card-body">
+                    <blockquote>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 475.082 475.081" x="0px" y="0px" width="25px" height="25px" xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:space="preserve" version="1.1">
+                          <g>
+                          <g>
+                          <path d="M 164.45 219.27 h -63.954 c -7.614 0 -14.087 -2.664 -19.417 -7.994 c -5.327 -5.33 -7.994 -11.801 -7.994 -19.417 v -9.132 c 0 -20.177 7.139 -37.401 21.416 -51.678 c 14.276 -14.272 31.503 -21.411 51.678 -21.411 h 18.271 c 4.948 0 9.229 -1.809 12.847 -5.424 c 3.616 -3.617 5.424 -7.898 5.424 -12.847 V 54.819 c 0 -4.948 -1.809 -9.233 -5.424 -12.85 c -3.617 -3.612 -7.898 -5.424 -12.847 -5.424 h -18.271 c -19.797 0 -38.684 3.858 -56.673 11.563 c -17.987 7.71 -33.545 18.132 -46.68 31.267 c -13.134 13.129 -23.553 28.688 -31.262 46.677 C 3.855 144.039 0 162.931 0 182.726 v 200.991 c 0 15.235 5.327 28.171 15.986 38.834 c 10.66 10.657 23.606 15.985 38.832 15.985 h 109.639 c 15.225 0 28.167 -5.328 38.828 -15.985 c 10.657 -10.663 15.987 -23.599 15.987 -38.834 V 274.088 c 0 -15.232 -5.33 -28.168 -15.994 -38.832 C 192.622 224.6 179.675 219.27 164.45 219.27 Z" />
+                          <path d="M 459.103 235.256 c -10.656 -10.656 -23.599 -15.986 -38.828 -15.986 h -63.953 c -7.61 0 -14.089 -2.664 -19.41 -7.994 c -5.332 -5.33 -7.994 -11.801 -7.994 -19.417 v -9.132 c 0 -20.177 7.139 -37.401 21.409 -51.678 c 14.271 -14.272 31.497 -21.411 51.682 -21.411 h 18.267 c 4.949 0 9.233 -1.809 12.848 -5.424 c 3.613 -3.617 5.428 -7.898 5.428 -12.847 V 54.819 c 0 -4.948 -1.814 -9.233 -5.428 -12.85 c -3.614 -3.612 -7.898 -5.424 -12.848 -5.424 h -18.267 c -19.808 0 -38.691 3.858 -56.685 11.563 c -17.984 7.71 -33.537 18.132 -46.672 31.267 c -13.135 13.129 -23.559 28.688 -31.265 46.677 c -7.707 17.987 -11.567 36.879 -11.567 56.674 v 200.991 c 0 15.235 5.332 28.171 15.988 38.834 c 10.657 10.657 23.6 15.985 38.828 15.985 h 109.633 c 15.229 0 28.171 -5.328 38.827 -15.985 c 10.664 -10.663 15.985 -23.599 15.985 -38.834 V 274.088 C 475.082 258.855 469.76 245.92 459.103 235.256 Z" />
+                          </g>
+                          </g>
+                          
+                          </svg>
+                    
+                    </blockquote>
+                </div>
+                <div class="card-footer" >
+                       <p class="mb-0 font-weight-bolder">K Anand Karthik
+
+                       </p>
+                      
+                  <small class="text-muted">
+  Web Designer</small>
+ 
+  <div class="social-links d-flex justify-content-between align-items-center p-2" >
+    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+     <a href="https://www.linkedin.com/in/anand-karthik-9b1161197/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+   
+  </div>
+                </div>
+              </div>
+            </div>
+            
+<div class="card-body">
+  
+</div>
+
+
+
+
+    
+  
+      
+
+
+  </main></main> <script src="preloader.js"></script>
+<!-- main end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Vision and Mission</h5>
+          <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         <h3> Vision</h3>
+  Towards a Global Knowledge Hub, striving continuously in pursuit of excellence in Education, Research, Consultancy and Technological services to the society.
+  
+  <h3>Mission</h3>
+  <p>M1: To produce the best quality Computer Science professionals by imparting quality training, hands on experience and value education.
+  </p> 
+  <p>M2: To strengthen links with industry through partnerships and collaborative developmental works.
+  </p> 
+   <p>  M3: To attain self-sustainability and overall development through Research, Consultancy and Development activities.
+  </p>
+  <p>
+  M4: To extend technical expertise to other technical institutions of the region and play a lead role in imparting technical education.
+  </p>
+  <p>
+  M5: To inculcate work ethics and commitment in students for their future endeavors to serve the society.
+  </p>
+        </div>
+       
+  
+  
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+         </div> 
+  
+      </div>
+    </div>
+  </div>
+  <!-- modal end -->
+  
+  
+  
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Objectives</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        
+  
+          <div class="container1">
+            <h3 style="text-align:center">Program Educational Objectives</h3>
+        </div>
+        <div class="content1">
+            <ul>
+                <li>PEO 1: Employability: Computer Science & Engineering graduates will acquire capability to apply their
+                    knowledge and skills to solve various kinds of computational engineering problems.</li>
+                <li>PEO 2: Professionalism: Graduates will inculcate in students professional attitude, inter-disciplinary
+                    approach,
+                    ethics and ability to relate computer engineering issues with social awareness.</li>
+                <li>PEO 3: Managerial skills: Graduates will possess managerial skills to face challenges in the profession
+                    by working
+                    harmoniously in a team with effective communication skills.</li>
+                <li>PEO 4: Continuous learning: Graduates will continue to learn and adapt in a world of constantly
+                    evolving
+                    technologies and pursue research towards academic excellence.</li>
+                <li>PEO 5: Adaptability: Graduates of Computer Science & Engineering will have soft skills to adapt to the
+                    diverse
+                    global environment.</li>
+            </ul>
+        </div>
+        <div class="container2">
+            <h3>Program Outcomes</h3>
+        </div>
+        <div class="content2">
+            <ul>
+                <li>PO1: Engineering knowledge: Apply the knowledge of mathematics, science, engineering fundamentals, and
+                    an
+                    engineering specialization to the solution of complex engineering problems.</li>
+                <li>PO2: Problem analysis: Identify, formulate, review research literature, and analyze complex engineering
+                    problems
+                    reaching substantiated conclusions using first principles of mathematics, natural sciences, and
+                    engineering
+                    sciences.</li>
+                <li>PO3: Design/development of solutions: Design solutions for complex engineering problems and design
+                    system
+                    components or processes that meet the specified needs with appropriate consideration for the public
+                    health and
+                    safety, and the cultural, societal, and environmental considerations.</li>
+                <li>PO4: Conduct investigations of complex problems: Use research-based knowledge and research methods
+                    including
+                    design of experiments, analysis and interpretation of data, and synthesis of the information to provide
+                    valid
+                    conclusions.</li>
+                <li>PO5: Modern tool usage: Create, select, and apply appropriate techniques, resources, and modern
+                    engineering and IT
+                    tools including prediction and modeling to complex engineering activities with an understanding of the
+                    limitations.</li>
+                <li>PO6: The engineer and society: Apply reasoning informed by the contextual knowledge to assess societal,
+                    health,
+                    safety, legal and cultural issues and the consequent responsibilities relevant to the professional
+                    engineering
+                    practice.</li>
+                <li>PO7: Environment and sustainability: Understand the impact of the professional engineering solutions in
+                    societal
+                    and environmental contexts, and demonstrate the knowledge of, and need for sustainable development.</li>
+                <li>PO8: Ethics: Apply ethical principles and commit to professional ethics and responsibilities and norms
+                    of the
+                    engineering practice.</li>
+                <li>PO9: Individual and team work: Function effectively as an individual, and as a member or leader in
+                    diverse teams,
+                    and in multidisciplinary settings.</li>
+                <li>PO10: Communication: Communicate effectively on complex engineering activities with the engineering
+                    community
+                    and with society at large, such as, being able to comprehend and write effective reports and design
+                    documentation, make effective presentations, and give and receive clear instructions.</li>
+                <li>PO11: Project management and finance: Demonstrate knowledge and understanding of the engineering and
+                    management principles and apply these to one’s own work, as a member and leader in a team, to manage
+                    projects and in multidisciplinary environments.</li>
+                <li>PO12: Life-long learning: Recognize the need for, and have the preparation and ability to engage in
+                    independent and life-long learning in the broadest context of technological change.</li>
+            </ul>
+        </div>
+        <div class="container3">
+            <h3>Program Specific Outcomes</h3>
+        </div>
+        <div class="content3">
+            <ul>
+                <li>PSO 1: Software Development Skills: Analyze a problem, design an algorithm, define the computing
+                    requirements and implement it through logical and programming skills.</li>
+                <li>PSO 2: Professional Skills: Architect, evolve and integrate a working model, leading to secure software
+                    product development to meet the evolving needs of the industry and open source environments.</li>
+                <li>PSO 3: Interdisciplinary Skills: Understand software engineering practices and hardware integration for
+                    developing solutions to real world problems over multi-disciplinary domains.</li>
+                <li>PSO 4: Industry Readiness: Use theoretical and practical concepts of various domains to realize new
+                    ideas and innovations for pursuing research, entrepreneurship, employment and higher studies.</li>
+            </ul>
+        </div>
+  
+        </div>
+       
+  
+  
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+         </div> 
+  
+      </div>
+    </div>
+  </div>
+  <!-- modal end -->
+
+
+
+
+  
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

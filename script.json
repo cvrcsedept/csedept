@@ -1,0 +1,62 @@
+
+
+{
+    "academic_calendar":[  
+    {"title":"Mtech 1st year Academic Calendar", "url":"assets/academic_calendars/I M.Tech Academic Calendars 2021-22 (Revised-Feb2021).pdf","description":"Mtech 1st year Academic Calendar "},
+    {"title":"Btech 2nd year Academic Calendar", "url":"assets/academic_calendars/II BTech Academic Calendar 2021-22.pdf","description":" Btech 2nd year Academic Calendar"}
+    ],
+    "syllabus_book":[  
+        {"title":"Btech 3rd year 1st sem", "url":"assets/syllabus_books/3-1_Syllabus.pdf","description":"Btech 3rd year 1st sem  syllabus book "},
+        {"title":"Btech 3rd year 2nd sem", "url":"assets/syllabus_books/3-2_Syllabus.pdf","description":"Btech 3rd year 2nd sem  syllabus book"},
+        {"title":"Btech 4th year 1st sem", "url":"assets/syllabus_books/4-1_Syllabus.pdf","description":"Btech 4th year 1st sem  syllabus book"},
+        {"title":"Btech 4th year 1st sem", "url":"assets/syllabus_books/4-2_Syllabus.pdf","description":"Btech 4th year 1st sem syllabus book "},
+        {"title":"Btech open electives", "url":"assets/syllabus_books/Open_Electives.pdf","description":"Btech open electives  syllabus book"},
+        {"title":"TextBook References", "url":"assets/syllabus_books/TextBooks_References_Incomplete_Info_details.pdf","description":"Btech all semesters TextBook References "}
+   
+    ],
+
+        "time_table":[  
+            {"title":"Btech 3rd year 2nd sem", "url":"assets/time_tables/III YR II SEM W.E.F 13.04.2022 - OFFLINE.xlsx","description":" Btech 3rd year 2nd sem time table"},
+            {"title":"Btech 4th year 2nd sem", "url":"assets/time_tables/IV YEAR II SEM  W.E.F 14.3.2022 - OFFLINE.xls.xls","description":" Btech 4th year 2nd sem time table"},
+            {"title":"Btech 2nd year 2nd sem", "url":"assets/time_tables/II YEAR II SEM CSE  TIME TABLE 04-04-2022.xls","description":" Btech 2nd year 2nd sem time table"},
+            {"title":"Btech 2nd year 1st sem", "url":"assets/time_tables/II YEAR I SEM CSE TIME TABLE 25.10.21.xls","description":" Btech 2nd year 1st sem time table"}
+           
+        ],
+        "publications":[  
+            {"title":"2021-2022", "url":"assets/publications/20-21&21-22 publications index sheet.xls","description":" Faculty Participation in FDP's Conferences and Workshops and other Activities 2021-2022"},
+            {"title":" 2020-2021", "url":"assets/publications/20-21.xlsx","description":" Faculty Participation in FDP's Conferences and Workshops and other Activities 2020-2021"},
+          
+            {"title":"2018-2019", "url":"assets/publications/18-19.xls","description":" Faculty Participation in FDP's Conferences and Workshops and other Activities 2018-2019"}
+                
+        ],
+     "faculty":[
+         {"name":"Dr. Raghava V. Cherabuddi","url":"https://lh3.googleusercontent.com/d/14hz3ySPn-zBd4Tu3NtY1F05LSGdFfWvp=s220","designation":"Professor and I/C Placements","doj":"1st July 2009","qualification":"Highest Qualification - M.S. Ph.D. (U.S.A)","specialisation":"Computer Engineering"}
+     ] ,
+     "labs":[
+         {"title":"mobile application development lab","url":"assets/img/mad_lab1.jpeg","description":"mad lab "} ,
+         {"title":"analysis lab","url":"assets/img/analysis_lab.jpeg","description":"analysis lab "},
+         {"title":"english lab","url":"assets/img/english_lab.jpeg","description":"english lab "},
+         {"title":"JAVA lab","url":"assets/img/java_lab.jpeg","description":"java lab "},
+         {"title":"internet of things lab","url":"assets/img/iot_lab.jpeg","description":"iot lab "},
+         {"title":"computational mathematics lab","url":"assets/img/cm_lab.jpeg","description":"computational mathematics lab "},
+         {"title":"operating systems lab","url":"assets/img/os_lab.jpeg","description":"operating system lab "}
+         
+
+    
+    
+
+    
+    
+     ],
+     "library":[
+        {"title":"CSE library","url":"assets/img/library.jpeg","description":"The serene ambience inspires a love for reading. Information at the click of a finger tip invites the students to delve into the world of words and the wealth of research material available. Interaction with eminent authors, book reviews and reading sessions are conducted regularly exposing students to good written and reading skills.The reference library, which is fully computerized and houses over 20,000 books, is a treasure trove of information that has been built assiduously over a span of more than 5 decades and continues to grow each year."}
+    ],
+    "seminars":[
+        {"title":"seminar hall","url":"assets/img/seminar.png","description":"The college has an air-conditioned seminar hall which is frequently used by faculty and stodents.The seminar hall is equipped with LCD Projectors and multimedia kits.Seating capacity of the hall is 105.Many lectures, workshops and recruitment programs are held in this Seminar Hall. "} 
+    ],
+    "class_rooms":[
+        {"title":"class rooms","url":"assets/img/class.jpg","description":"The class rooms are spacious and creates an atmosphere to specialize the students to acquire education through well-equipped class rooms. Our classrooms are equipped with green chalk boards, slide projectors, and screens. Green chalk boards are used for classroom teaching. Projectors and screens are used to involve students in learning with technology. Notes, flowcharts, drawings and PPTs used in the course of teaching are saved to be accessed as and when required. Each classroom provides an occupancy of 60+ students. "} 
+      
+    ]
+}  
+
