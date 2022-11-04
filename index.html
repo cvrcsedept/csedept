@@ -767,7 +767,7 @@ M5: To inculcate work ethics and commitment in students for their future endeavo
   let table = document.getElementById("table");
        (
            async() => {
-               let workbook = XLSX.read(await (await fetch("https://api.codetabs.com/v1/proxy?quest=https://github.com/anandkarthik39/csedept/blob/master/FacultyList.xls?raw=true")).arrayBuffer());
+               let workbook = XLSX.read(await (await fetch("https://api.codetabs.com/v1/proxy?quest=https://github.com/cvrcsedept/csedept/blob/master/FacultyList.xls?raw=true")).arrayBuffer());
                
                let worksheet = workbook.SheetNames;
                console.log(worksheet);
