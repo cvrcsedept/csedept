@@ -32,7 +32,10 @@
       padding:10px 10px;
     }
     table tr{
-      border-bottom:1px solid white;
+      border-bottom:1px solid rgb(240, 235, 235);
+    }
+    table tr td:first-child{
+      text-align: center;
     }
    </style>
 </head>
@@ -151,6 +154,12 @@
     </table> -->
     
     <div class="table" id="table"></div>
+    
+    <div class="section-title p-2">
+      <h2>M.Tech Artificial Intelligence</h2>
+      </div>
+    <div class="table" id="table1"></div>
+
 </div>
 
 
@@ -410,6 +419,29 @@
            }
        )()
    </script>
+    <script>
+      
+      let table1 = document.getElementById("table1");
+      (
+          async() => {
+              let workbook = XLSX.read(await (await fetch("https://api.codetabs.com/v1/proxy?quest=https://github.com/anandkarthik39/csedept/blob/master/FacultyList.xls?raw=true")).arrayBuffer());
+              
+              let worksheet = workbook.SheetNames;
+              console.log(worksheet);
+               worksheet=[worksheet[1]];
+              worksheet.forEach(name => {
+              
+                  let html = XLSX.utils.sheet_to_html(workbook.Sheets[name]);
+                  
+                  table1.innerHTML += `
+                  ${html}
+                  `;
+                
+              })
+              
+          }
+      )()
+  </script>
 
 </body>
 </html>
