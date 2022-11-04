@@ -714,7 +714,7 @@ M5: To inculcate work ethics and commitment in students for their future endeavo
   var l_p=0;
   var l_a =0 ;
   
-
+ var q=0,r=0,s=0,t=0,u=0,v=0;
   // fetch('facultylist.json').then(res=>res.json()).then(txt=>{
    
 
@@ -771,7 +771,7 @@ M5: To inculcate work ethics and commitment in students for their future endeavo
                
                let worksheet = workbook.SheetNames;
                console.log(worksheet);
-                worksheet=[worksheet[0]];
+                
                worksheet.forEach(name => {
                    let html = XLSX.utils.sheet_to_html(workbook.Sheets[name]);
                   
@@ -792,15 +792,21 @@ M5: To inculcate work ethics and commitment in students for their future endeavo
                  as_p=as_p-s_p;
                  p=p-a_p-s_p-as_p;
                 
-
-      Professors.innerHTML=p;
-      Associate_professors.innerHTML=a_p;
-      Sr_Assistant_Professors.innerHTML=s_p;
-      Assistant_Professors.innerHTML=as_p;
-      Lab_Programmers.innerHTML=l_p;
-      Lab_Administrators.innerHTML=l_a;
+                
+                q+=p;
+                r+=a_p;
+                s+=s_p;
+                t+=as_p;
+                u+=l_p;
+                v+=l_a;
 
                })
+      Professors.innerHTML=q;
+      Associate_professors.innerHTML=r;
+      Sr_Assistant_Professors.innerHTML=s;
+      Assistant_Professors.innerHTML=t;
+      Lab_Programmers.innerHTML=u;
+      Lab_Administrators.innerHTML=v;
                
            }
        )();
